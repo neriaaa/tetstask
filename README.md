@@ -35,6 +35,23 @@ project/
 - CSV export
 
 ---
+## 🤖 AI-assisted development
+
+Проект разрабатывался с использованием AI-assisted workflow:
+
+- Claude
+- Cursor
+- ChatGPT
+
+AI использовался для:
+- генерации структуры проекта,
+- рефакторинга Python-кода,
+- построения scraping pipeline,
+- генерации personalization logic,
+- создания outreach email sequence,
+- улучшения архитектуры и обработки ошибок.
+
+Все результаты были дополнительно проверены и адаптированы вручную.
 
 ## ▶️ Запуск проекта
 
