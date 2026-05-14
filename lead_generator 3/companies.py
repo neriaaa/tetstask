@@ -1,0 +1,61 @@
+def get_company_sites():
+    """Return a list of 50 Russian B2B companies with their websites."""
+    return [
+        {"name": "1С", "website": "https://www.1c.ru"},
+        {"name": "Яндекс", "website": "https://www.yandex.ru"},
+        {"name": "Kaspersky Lab", "website": "https://www.kaspersky.ru"},
+        {"name": "EPAM Systems", "website": "https://www.epam.com"},
+        {"name": "Softline", "website": "https://www.softline.ru"},
+        {"name": "Ростелеком", "website": "https://www.rostelecom.ru"},
+        {"name": "МТС", "website": "https://www.mts.ru"},
+        {"name": "Билайн", "website": "https://www.beeline.ru"},
+        {"name": "МегаФон", "website": "https://www.megafon.ru"},
+        {"name": "Сбер Бизнес", "website": "https://www.sberbank.ru/ru/s_m_business"},
+        {"name": "ВТБ Бизнес", "website": "https://www.vtb.ru/malyj-biznes"},
+        {"name": "Тинькофф Бизнес", "website": "https://www.tinkoff.ru/business"},
+        {"name": "Контур", "website": "https://www.kontur.ru"},
+        {"name": "КРОК", "website": "https://www.croc.ru"},
+        {"name": "Ланит", "website": "https://www.lanit.ru"},
+        {"name": "Техносерв", "website": "https://www.technoserv.com"},
+        {"name": "Инфосистемы Джет", "website": "https://www.jet.su"},
+        {"name": "АйТеко", "website": "https://www.aiteco.ru"},
+        {"name": "ICL Services", "website": "https://www.icl-services.com"},
+        {"name": "Luxoft", "website": "https://www.luxoft.com"},
+        {"name": "DataArt", "website": "https://www.dataart.com"},
+        {"name": "Positive Technologies", "website": "https://www.ptsecurity.com"},
+        {"name": "InfoWatch", "website": "https://www.infowatch.ru"},
+        {"name": "Доктор Веб", "website": "https://www.drweb.ru"},
+        {"name": "Aqua Security", "website": "https://www.aquasec.com"},
+        {"name": "Галактика", "website": "https://www.galaktika.ru"},
+        {"name": "Парус", "website": "https://www.parus.com"},
+        {"name": "Диасофт", "website": "https://www.diasoft.ru"},
+        {"name": "ЦФТ (Центр Финансовых Технологий)", "website": "https://www.cft.ru"},
+        {"name": "Terrasoft (Creatio)", "website": "https://www.creatio.com"},
+        {"name": "Битрикс24", "website": "https://www.bitrix24.ru"},
+        {"name": "AmoCRM", "website": "https://www.amocrm.ru"},
+        {"name": "МойСклад", "website": "https://www.moysklad.ru"},
+        {"name": "Мегаплан", "website": "https://www.megaplan.ru"},
+        {"name": "Platforma OFD", "website": "https://www.platformaofd.ru"},
+        {"name": "СБИС (Тензор)", "website": "https://www.sbis.ru"},
+        {"name": "Эвотор", "website": "https://www.evotor.ru"},
+        {"name": "Атол", "website": "https://www.atol.ru"},
+        {"name": "Транспортная компания СДЭК", "website": "https://www.cdek.ru"},
+        {"name": "Деловые Линии", "website": "https://www.dellin.ru"},
+        {"name": "ПЭК", "website": "https://www.pecom.ru"},
+        {"name": "Почта России Бизнес", "website": "https://www.pochta.ru/business"},
+        {"name": "HeadHunter (hh.ru)", "website": "https://www.hh.ru"},
+        {"name": "SuperJob", "website": "https://www.superjob.ru"},
+        {"name": "Работа.ру", "website": "https://www.rabota.ru"},
+        {"name": "Авито Работа", "website": "https://www.avito.ru/rabota"},
+        {"name": "2ГИС", "website": "https://www.2gis.ru"},
+        {"name": "Контур.Фокус", "website": "https://focus.kontur.ru"},
+        {"name": "Seldon", "website": "https://www.seldon.ru"},
+        {"name": "Тендерплан", "website": "https://www.tenderplan.ru"},
+    ]
+
+
+if __name__ == "__main__":
+    companies = get_company_sites()
+    print(f"Total companies: {len(companies)}\n")
+    for i, company in enumerate(companies, start=1):
+        print(f"{i:>2}. {company['name']:<40} {company['website']}")
